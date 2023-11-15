@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Download Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Game Download Page</h1>
+</header>
+
+<nav>
+    <a href="javascript:void(0);" onclick="showTab('home')">Home</a>
+    <a href="javascript:void(0);" onclick="showTab('mods')">Mods</a>
+    <a href="javascript:void(0);" onclick="showTab('fix')">Fix Error and Bugs</a>
+    <a href="javascript:void(0);" onclick="showTab('settings')">Settings</a>
+</nav>
+
+<div class="content">
+    <div id="home" class="tab-content">
+        <div class="game-card" onmouseover="showTable(this)" onmouseout="hideTable(this)">
+            <img src="game1_thumbnail.jpg" alt="Game 1">
+            <h2>GTA San Andreas</h2>
+            <p>Grand Theft Auto San Andreas</p>
+            <button href="#" class="download-button">Download</button>
+            <table class="game-table">
+                <!-- Table content -->
+            </table>
+        </div>
+        <!-- Add more game cards as needed -->
+    </div>
+
+    <div id="mods" class="tab-content">
+        <div class="mod-card-container">
+            <div class="mod-card">
+                <img src="spiderman_mod.jpg" alt="Spiderman Mod">
+                <h2>Spiderman Mod</h2>
+                <p>Spiderman Mod in GTA Sa</p>
+                <button href="#" class="download-button">Download</button>
+            </div>
+            
+        </div>
+
+    </div>
+
+    <div id="fix" class="tab-content">
+        <div class="fix_error-container">
+            <div class="fix_error-card">
+                <h2>Mouse Lag Fix</h2>
+                <p>Fix the mouse not working in the game.</p>
+                <button href="#" class="download-button">Download</button>
+            </div>
+
+            <div class="fix_error-card">
+                <h2>Fix Everything</h2>
+                <p>This file will fix every error in game</p>
+                <button href="#" class="download-button">Download</button>
+            </div>
+
+            <div class="fix_error-card">
+                <h2>No Disc Inserted Fix</h2>
+                <p>Fix "No Disc Inserted, Please Insert the CD/DVD."</p>
+                <button href="#" class="download-button">Download</button>
+            </div>
+
+            <div class="fix_error-card">
+                <h2>Widscreen Fix</h2>
+                <p>Widescreen fix may be or idk</p>
+                <button href="#" class="download-button">Download</button>
+            </div>
+
+
+            <!-- Add more error cards as needed -->
+        </div>
+    </div>
+
+    <div id="settings" class="tab-content">
+        <div class="dark-mode-toggle">
+            <label for="dark-mode">Dark Mode:</label>
+            <input type="checkbox" id="dark-mode" onchange="toggleDarkMode()">
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
